@@ -1,4 +1,28 @@
 
+[data-theme="dark"] > body {
+  background-color: #363535;
+}
+
+[data-theme="dark"] .card {
+  background-color: #4c4c4c;
+}
+[data-theme="dark"] p {
+  color: whitesmoke;
+}
+
+[data-theme="dark"] h1 {
+  color: whitesmoke;
+}
+
+[data-theme="dark"]  .list-element > a {
+  color: whitesmoke;
+}
+[data-theme="dark"] #theme-switcher {
+  padding: 20px;
+  background-color:rgb(251, 245, 239);
+  color: rgb(1, 0, 0);
+  border-radius: 5px;
+}
 body{
   color: #f7f9fc;
 }
@@ -20,11 +44,11 @@ a {
   transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.btn {
-  padding: 0.8em;
-  background-color: rgb(132, 132, 228);
+#theme-switcher {
+  padding: 20px;
+  background-color:rgb(2, 1, 0);
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 a:hover {
@@ -85,7 +109,7 @@ img {
   .container {
     width: 300px;
   }
-  .btn {
+  #theme-switcher {
     padding: 0.1em;
     background-color: blue;
     color: white;
