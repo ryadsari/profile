@@ -7,8 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>My Profile</title>
+
+  <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.documentElement.setAttribute("data-theme", "light");
+        var themeSwitcher = document.getElementById("theme-switcher");
+        themeSwitcher.onclick = function() {
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+        }
+      });
+    </script>
+
 </head>
 <body>
+
   <div class="container-column">
     <div class="card">
       <h1>Hello I'm Ryad !</h1>
@@ -16,7 +31,7 @@
       <p>I love web developement, cyber security and my friends from le wagon I'm also a big
         video games fan at this momment I mostly play Guild wars 2 my second home !
       </p>
-      <a class="btn" href="https://github.com/ryadsari"> My github page !</a>
+      <button id="theme-switcher">Switch themes!</button>
 
     </div>
     <div class="card">
@@ -39,6 +54,7 @@
         </li>
       </ul>
     </div>
+
 
   </div>
 </body>
