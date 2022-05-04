@@ -1,0 +1,105 @@
+
+body{
+  color: #f7f9fc;
+}
+
+h1{
+  color: #14d5df;
+}
+p {
+  font-size: 1.3em;
+  color: rgb(96, 40, 106);
+  font-weight: normal;
+  font-family: "Helvetica";
+}
+
+a {
+  text-decoration: none;
+  color: rgba(16, 18, 91, 0.791);
+  font-size: 1.24em;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.btn {
+  padding: 0.8em;
+  background-color: rgb(132, 132, 228);
+  color: white;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: rgb(189, 53, 53);
+}
+
+h2 {
+  color: #999ea3;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.container-row {
+  display: ruby-text-container;
+  list-style: none;
+
+}
+.list-element {
+  padding: 0.4em;
+  font-size: 2em;
+}
+.list-element > a{
+  color: rgb(160, 135, 135);
+}
+.list-element > a:hover {
+  color: rgb(204, 15, 15);
+  font-size: 1.8em;
+}
+
+
+.container-column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card {
+  border: 1px solid whitesmoke;
+  text-align: center;
+  box-shadow:0px 10px 30px rgba(0,0,0,0.1);
+  background-color: white;
+  margin: 15px;
+  margin-right: 40px;
+  margin-left: 50px;
+  flex-grow: 1;
+  padding: 40px;
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .btn {
+    padding: 0.1em;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+  }
+  .list-element > a{
+    color: rgb(160, 135, 135);
+    font-size: 0.4em;
+  }
+  .list-element > a:hover {
+    color: rgb(204, 15, 15);
+  }
+  .card{
+    margin: 0;
+  }
+
+}
